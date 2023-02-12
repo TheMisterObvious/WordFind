@@ -1,4 +1,4 @@
-const english = en_words.split("\n");
+const english = en_words.split(";");
 var wordToFind = ""
 
 const body = document.getElementsByTagName("body")[0]
