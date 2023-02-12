@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./data/english.js"></script>
+    <script defer src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/pc.css">
+    <link rel="icon" href="./icon.png">
+    <title>WordFind</title>
+</head>
+<body>
+    <h1 id="title" class="text-shadow-pop-bl">WordFind</h1>
+    <div id="typing"><h2 id="type-h2"><a id="inside-typing" href="https://www.instagram.com/aliyos12/" target="_blank">The <span id="type-from" class="from">earth</span> without <span id="type-without" class="without">art</span> is just <span id="type-to" class="to">eh</span></a></h2></div>
+    <input id="word-input" type="text" placeholder="Enter a word">
+    <div id="buttons">
+        <button id="from" onclick="fromWord()">From word</button>
+        <button id="without" onclick="withoutWord()">Without word</button>
+        <button id="to" onclick="toWord()">To word</button>
+    </div>
+    <div id="output"></div>
+</body>
+</html>

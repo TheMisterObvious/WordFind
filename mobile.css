@@ -1,0 +1,148 @@
+@media only screen and (max-width: 600px) {
+    #title {
+        color: white;
+        justify-self: start;
+        font-size: 50px;
+        margin: 20% 0 16% 0;
+    }
+
+    .text-shadow-pop-bl {
+        animation: text-shadow-pop-bl .8s ease-in-out both;
+        -webkit-animation: text-shadow-pop-bl .8s ease-in-out both;
+    }
+
+    #typing > h2 {
+        color: white;
+        overflow-x: hidden;
+        overflow-y: visible;
+        font-size: 18px;
+        border-right: 5px solid white; 
+        padding-right: 5px;
+        white-space: nowrap;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+
+    #type-from.type-hover {
+        text-shadow: 0 -4px 6px rgba(var(--from-color), 0.6), 0 4px 6px rgba(var(--from-color), 0.6);
+    }
+
+    #type-without.type-hover {
+        text-shadow: 0 -4px 6px rgba(var(--without-color), 0.6), 0 4px 6px rgba(var(--without-color), 0.6);
+    }
+
+    #type-to.type-hover {
+        text-shadow: 0 -4px 6px rgba(var(--to-color), 0.6), 0 4px 6px rgba(var(--to-color), 0.6);
+    }
+
+    #from:hover, .from {
+        color: rgb(var(--from-color)) !important;
+    }
+
+    #without:hover, .without {
+        color: rgb(var(--without-color)) !important;
+    }
+
+    #to:hover, .to {
+        color: rgb(var(--to-color)) !important;
+    }
+
+    #word-input {
+        /* background-color: #212121; */
+        color: #ababab;
+        background: none;
+        min-width: 250px;
+        max-width: 320px;
+        height: 50px;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid #3d3f43;
+        border-radius: 5px;
+        margin-bottom: 60px;
+        /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+    }
+    
+    #word-input:focus {
+        /* caret-color: transparent; */
+        /* background-color: #212121; */
+        background: none;
+        outline-color: rgb(0, 255, 255);
+        box-shadow: -3px -3px 15px rgb(0, 255, 255);
+        transition: .1s;
+        transition-property: box-shadow;
+    }
+
+    .shake {
+        -webkit-animation: shake 0.5s ease-in-out forwards;
+        animation: shake 0.5s ease-in-out forwards;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #buttons > button {
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #3d3f43;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #6B6B6B;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        min-height: 40px;
+        width: 180px;
+        outline: none;
+        padding: 16px 18px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+    }
+        
+    #buttons > button:disabled {
+        pointer-events: none;
+    }
+        
+    #buttons > button:hover {
+        color: #fff;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    #buttons > button:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    #output {
+        width: 84%;
+        height: fit-content;
+        padding: 2%;
+        background: #111317;
+        border: 1px solid #212327;
+        outline: solid 2px #412347;
+        border-radius: 15px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        color: white;
+        margin-bottom: 30px;
+    }
+}
